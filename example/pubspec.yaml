@@ -27,7 +27,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  rotating_widget:
+  animated_rotating_widget:
     path: ../
   flutter:
     sdk: flutter

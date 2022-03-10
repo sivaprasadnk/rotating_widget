@@ -1,21 +1,26 @@
-library rotating_widget;
+library animated_rotating_widget;
 
 import 'package:flutter/material.dart';
 
-class RotatingWidget extends StatefulWidget {
+/// Rotates [child] widget in specified [duration] duration.
+///
+/// [child] and [duration] arguments must not be null.
+class AnimatedRotatingWidget extends StatefulWidget {
+  /// the widget to rotate
   final Widget child;
+
+  /// duration to complete a single rotation
   final Duration duration;
-  const RotatingWidget({
-    Key? key,
-    required this.child,
-    required this.duration,
-  }) : super(key: key);
+
+  const AnimatedRotatingWidget(
+      {Key? key, required this.child, required this.duration})
+      : super(key: key);
 
   @override
-  State<RotatingWidget> createState() => _RotatingWidgetState();
+  State<AnimatedRotatingWidget> createState() => _AnimatedRotatingWidgetState();
 }
 
-class _RotatingWidgetState extends State<RotatingWidget>
+class _AnimatedRotatingWidgetState extends State<AnimatedRotatingWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 

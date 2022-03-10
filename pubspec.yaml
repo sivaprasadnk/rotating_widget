@@ -1,6 +1,6 @@
-name: rotating_widget
-description: Rotate any widget with the help of RotatingWidget
-version: 0.0.1
+name: animated_rotating_widget
+description: Looking to rotate your widget continuously with a specified duration? AnimatedRotatingWidget is your solution. Just provide the duration and the widget will continuously rotate.
+version: 0.0.2
 homepage: https://github.com/sivaprasadnk/rotating_widget
 
 environment:
